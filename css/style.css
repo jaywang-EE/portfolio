@@ -6,6 +6,11 @@ body {
   font-family: 'Ubuntu', Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body{
   background-color: #bbb;
   font-size: 18px;
