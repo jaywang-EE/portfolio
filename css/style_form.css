@@ -8,6 +8,15 @@ form {
   /*background-image: url('../imgs/concrete_seamless.png');*/
 }
 
+.title {
+  text-align: center;
+  padding: 20px 0;
+}
+h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+
 legend{ 
   font-size: 125%;
   font-style:italic;
