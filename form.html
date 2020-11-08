@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/email.png"/>
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style_form.css">
+  <title>Jay's home</title>
+</head>
+
+<body>  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="galleries.html">Galleries</a></li>
+      <li class="curr"><a href="form.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2 class="title">Your opinion matters!<br> Please leave your massage <br> if you have any advice or opportunity</h2>
+    
+    <div class="container">
+    <form method="POST" action="https://formspree.io/f/xbjpydqg">
+      <fieldset>
+        <legend>Contact Me</legend>
+        <label for="name_id">Your Name</label><br>
+        <input type="text" placeholder="Enter Your Name" name="name" id="name_id" required><br>
+
+        <label for="email_id">Your Email</label><br>
+        <input type="email" name="email" id="email_id" required><br>
+
+        <div>
+          <label for="msg_id">Your advice</label><br>
+          <textarea name="msg" id="msg_id"></textarea>
+        </div>
+
+        <input type="submit" value="Contact Me">
+      </fieldset>
+    </form>
+
+    <h2>Or, you can contact me directly via my social media in below!</h2>
+      
+    </div>
+  </main>
+
+  <footer>
+    <p> github | mail | linkedin </p>
+    <br>
+    <p>&copy; Chia-Ming Wang</p>
+  </footer>
+</body>
+</html>

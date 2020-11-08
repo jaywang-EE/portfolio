@@ -1,0 +1,136 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; /* I don't need this  line*/
+  margin: auto;
+  width: 95vw;
+}
+
+div{
+  overflow: hidden;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column: 1 / -1;
+}
+
+/* Tablet layout */
+/* Two equal columns using fr*/
+/* Six rows of 350px and one of 100px*/
+@media screen and (min-width: 600px){
+  h1{
+    text-transform: uppercase;
+    color: #F00;
+  }
+
+  .gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+    margin: auto;
+    width: 95vw;
+      }
+
+  .img-three{
+    grid-column: 1 / span 2;
+  }
+
+  .img-six{
+    grid-column: 1 / span 2;
+  }
+
+  .img-seven{
+    grid-column: 1 / span 2;
+    grid-row: 6 / auto;
+  }
+
+  .img-eight{
+    grid-column: 2 / auto;
+    grid-row: 5 / auto;
+  }
+
+  .img-nine{
+    grid-column: 1 / auto;
+    grid-row: 5 / auto;
+  }
+}
+
+/* Desktop layout */
+/* Four equal columns using fr*/
+/* Five rows of 350px and one of 100px*/
+@media screen and (min-width: 1000px){
+  h1{
+    text-transform: lowercase;
+    color: #00F;
+  }
+
+  .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 100px;
+    margin: auto;
+    width: 95vw;
+      }
+
+  .img-one{
+    grid-column: 3 / -1;
+  }
+
+  .img-two{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .img-three{
+    grid-column: 3 / -1;
+  }
+
+  .img-four{
+    grid-row: 3 / auto;
+    grid-column: 2 / auto;
+  }
+  
+  .img-five{
+    grid-row: 3 / auto;
+    grid-column: 1 / auto;
+  }
+
+  .img-six{
+    grid-row: 3 / auto;
+    grid-column: 3 / auto;
+  }
+
+  .img-seven{
+    grid-row: 4 / span 2;
+    grid-column: 2 / span 2;
+  }
+
+  .img-eight{
+    grid-row: 4 / span 2;
+    grid-column: 1 / auto;
+  }
+
+  .img-nine{
+    grid-row: 3 / span 3;
+    grid-column: 4 / auto;
+  }
+}

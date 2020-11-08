@@ -1,0 +1,18 @@
+.heroku > img {
+  border-radius: 50%;
+}
+
+.text-block {
+  width: 500px
+}
+
+.projects{
+    min-height: 500px;
+    /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: row wrap;
+    /*flex-direction: column;*/
+}

@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+}
+
+body{
+  background-color: #bbb;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  line-height: 4;
+  padding-right:20px;
+
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+nav a:hover, nav a:focus{
+  text-decoration: underline; 
+  background-color: black;
+}
+
+*:focus {
+  border-style: solid;
+  border-width: 2px;
+}
+
+nav{
+  background-color: #ddd;
+  padding: 0 0; 
+  text-align: left;
+}
+
+nav li.curr a {
+  background-color: #555555;
+  color: white;
+}
+
+footer{
+  /*position: fixed;*/
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+
+
+@media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+    /*Your code here:*/
+    text-align: right;
+  }
+}

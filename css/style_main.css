@@ -1,0 +1,129 @@
+
+.container{
+  /*Your Code Here*/
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  /*margin: auto;*/
+  /*width: 95vw;*/
+
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
+  background-image: url("../imgs/main_bar.png");
+  /*由 Huang Chung Yu - 自己的作品, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59992572*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.about, .works, .projects, .publications{
+  /*Your Code Here*/
+  grid-column: 2 / auto;
+}
+
+.about-image, .works-image, .projects-image, .publications-image{
+  /*Your Code Here*/
+  max-height: 700px;
+  grid-column: 1 / -1;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.about, .about-image{
+  /*Your Code Here*/
+  grid-row: 2 / auto;
+}
+
+.works, .works-image{
+   /*Your Code Here*/
+  grid-row: 3 / auto;
+
+}
+
+
+.projects, .projects-image{
+    /*Your Code Here*/
+  grid-row: 4 / auto;
+
+}
+
+
+.publications, .publications-image{
+    /*Your Code Here*/
+  grid-row: 5 / auto;
+
+}
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  /*Your code here:*/
+  align-self: center;
+}
+
+
+@media all and (min-width: 800px){
+  .container{
+    /*Your code here:*/
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+  }
+
+  .about, .projects, .works-image, .publications-image{
+    /*Your code here:*/
+    grid-column: 3 / 5;
+  }
+
+  .about-image, .projects-image, .works, .publications{
+    /*Your code here:*/
+    grid-column: 2 / 4;
+  }
+}
+
+/*You do not need to modify any code below this line.
+It is included for accessibility to turn off animations
+and movement for people who have modified their 
+preferences to reduce motion.*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}

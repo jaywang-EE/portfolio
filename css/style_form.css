@@ -1,0 +1,95 @@
+body {
+  background-image: url('../imgs/concrete_seamless.png');
+}
+
+form {
+  /*border: 3px solid #f1f1f1;*/
+  /*background: #91ffdc;*/
+  /*background-image: url('../imgs/concrete_seamless.png');*/
+}
+
+legend{ 
+  font-size: 125%;
+  font-style:italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+}
+
+input[type=checkbox]{
+    display:inline;
+    width:inherit;
+}
+
+input[type=submit] {
+  background-color: #333333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+div + label{
+  line-height: 25vh;
+  vertical-align:top;
+}
+
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+}

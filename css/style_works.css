@@ -1,0 +1,23 @@
+img {
+    height: 50px;
+}
+
+li {
+    line-height: 1.5;
+}
+
+.text-block {
+  width: 500px;
+  margin: 30px;
+}
+
+.works{
+    min-height: 500px;
+    /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-flow: row wrap;
+  
+}
