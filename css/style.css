@@ -48,8 +48,7 @@ nav a{
 }
 
 nav a:hover, nav a:focus{
-  text-decoration: underline; 
-  background-color: black;
+  background-color: #ddd;
 }
 
 *:focus {
@@ -64,6 +63,7 @@ nav{
 }
 
 nav li.curr a {
+  text-decoration: underline; 
   background-color: #555555;
   color: white;
 }
