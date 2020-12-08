@@ -53,6 +53,7 @@ header p{
 
 img {
   width: 100%;
+  height: auto;
 }
 
 .about, .about-image{
@@ -89,7 +90,11 @@ background-color: rgba(255, 255, 255, .8);
 }
 
 
-@media all and (min-width: 800px){
+@media all and (min-width: 700px){
+  img {
+    height: 100%;
+    width: auto;
+  }
   .container{
     /*Your code here:*/
     grid-template-columns: 50px auto 500px auto 50px;

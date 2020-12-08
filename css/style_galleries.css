@@ -20,6 +20,7 @@ h1{
   grid-template-rows: auto; /* I don't need this  line*/
   margin: auto;
   width: 95vw;
+  grid-row-gap: 20px;
 }
 
 div{
@@ -35,6 +36,10 @@ footer{
   grid-column: 1 / -1;
 }
 
+img {
+  max-height:100%; width:100%; max-width: 550px;
+}
+
 /* Tablet layout */
 /* Two equal columns using fr*/
 /* Six rows of 350px and one of 100px*/
@@ -44,36 +49,25 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
     margin: auto;
+    row-gap: 20px;
+    grid-column-gap: 20px;
     width: 95vw;
-      }
-
-  .img-three{
-    grid-column: 1 / span 2;
   }
 
-  .img-six{
-    grid-column: 1 / span 2;
-  }
-
-  .img-seven{
-    grid-column: 1 / span 2;
-    grid-row: 6 / auto;
-  }
-
-  .img-eight{
-    grid-column: 2 / auto;
-    grid-row: 5 / auto;
-  }
-
-  .img-nine{
-    grid-column: 1 / auto;
-    grid-row: 5 / auto;
+      /* <img id="image_cake" src="imgs/gallery_cake.jpg" alt="img0" />
+      <img id="image_sushi" src="imgs/gallery_sushi.jpg" alt="img1" />
+      <img id="image_meat" src="imgs/gallery_meat.jpg" alt="img2" />
+      <img id="image_gdself" src="imgs/gallery_gd1.jpg" alt="img3" />
+      <img id="image_gdchick" src="imgs/gallery_gd2.jpg" alt="img7" />
+      <img id="image_gdfish" src="imgs/gallery_gd3.jpg" alt="img8" />
+      <img id="image_gdcf" src="imgs/gallery_gd4.jpg" alt="img4" />
+      <img id="image_gdbean" src="imgs/gallery_gd5.jpg" alt="img5" />
+      <img id="image_gdsweet" src="imgs/gallery_gd6.jpg" alt="img6" /> */
+  #image_gdself {
+    grid-row: 2 / 4;
   }
 }
-
-/* Desktop layout */
-/* Four equal columns using fr*/
-/* Five rows of 350px and one of 100px*/
+/* 
 @media screen and (min-width: 1000px){
   .container{
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -124,4 +118,4 @@ footer{
     grid-row: 3 / span 3;
     grid-column: 4 / auto;
   }
-}
+} */

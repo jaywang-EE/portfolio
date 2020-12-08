@@ -1,9 +1,12 @@
 body {
   background-image: url('../imgs/concrete_seamless.png');
+  
+  text-align: center;
 }
 
 form {
-  /*border: 3px solid #f1f1f1;*/
+  border: 3px solid #f1f1f1;
+  width: auto;
   /*background: #91ffdc;*/
   /*background-image: url('../imgs/concrete_seamless.png');*/
 }
@@ -70,7 +73,7 @@ input[type=submit] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  /* width: 100%; */
 }
 
 input[type=submit]:hover {
@@ -82,13 +85,15 @@ div + label{
   vertical-align:top;
 }
 
-
-
+.contact {
+  text-align: center;
+}
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (min-width: 770px) {
   form{
-    width: 80%;
+
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -99,6 +104,6 @@ div + label{
   textarea{
     width:80%;
     height: 25vh;
- }
+  }
  
 }
