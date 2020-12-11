@@ -1,4 +1,10 @@
 var url = "https://script.google.com/macros/s/AKfycbyCCJX_JVAGckZNLZZexg3_1giU80DetWXLEdXQOsHUmT0JcDI/exec";
+if(typeof jQuery!=='undefined'){
+  console.log('jQuery Loaded');
+}
+else{
+  console.log('not loaded yet');
+}
 window.addEventListener("load", function() {
   getData();
 //   changeBody();
