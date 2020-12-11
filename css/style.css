@@ -45,6 +45,19 @@ h2{
 
 } */
 
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  position: absolute;
+  top:  -40px;
+}
+
+
 nav{
   background-color: #ddd;
   padding: 30px 0px;
