@@ -23,13 +23,13 @@ h1{
   grid-row-gap: 20px;
 }
 
-div{
+main div {
   overflow: hidden;
 }
 
-nav div{
+/* nav div{
   overflow: auto;
-}
+} */
 
 footer{
   background-color: black;
@@ -51,22 +51,13 @@ img {
 
   .gallery{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+    grid-template-rows: 350px 350px 350px 350px 350px 50px;
     margin: auto;
     row-gap: 20px;
     grid-column-gap: 20px;
     width: 95vw;
   }
 
-      /* <img id="image_cake" src="imgs/gallery_cake.jpg" alt="img0" />
-      <img id="image_sushi" src="imgs/gallery_sushi.jpg" alt="img1" />
-      <img id="image_meat" src="imgs/gallery_meat.jpg" alt="img2" />
-      <img id="image_gdself" src="imgs/gallery_gd1.jpg" alt="img3" />
-      <img id="image_gdchick" src="imgs/gallery_gd2.jpg" alt="img7" />
-      <img id="image_gdfish" src="imgs/gallery_gd3.jpg" alt="img8" />
-      <img id="image_gdcf" src="imgs/gallery_gd4.jpg" alt="img4" />
-      <img id="image_gdbean" src="imgs/gallery_gd5.jpg" alt="img5" />
-      <img id="image_gdsweet" src="imgs/gallery_gd6.jpg" alt="img6" /> */
   #image_gdself {
     grid-row: 2 / 4;
   }

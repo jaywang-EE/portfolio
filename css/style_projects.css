@@ -63,7 +63,6 @@
 
 @media screen and (min-width: 1300px){
   .text-block {
-    width: 600px;
-    margin: 20px;
+    margin: 100px;
   }
 }
