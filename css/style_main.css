@@ -4,13 +4,12 @@
   display: grid;
   grid-row-gap: 15px;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  /*margin: auto;*/
-  /*width: 95vw;*/
-
+  grid-template-rows: auto 400px 400px 400px 400px;
+  margin-bottom: 20px; 
 }
 
-header{
+.parallax  {
+  background-image: url("../imgs/main_bar.png");
   background-attachment: fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
@@ -18,29 +17,24 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
 
-  /*Your Code Here*/
-  /*Set background-image to header.jpg */
-  background-image: url("../imgs/main_bar.png");
   /*由 Huang Chung Yu - 自己的作品, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=59992572*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
 
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 1 / auto;   /*Can you rewrite it?*/
+  grid-column: 1 / -1;
+  grid-row: 1 / auto;
+}
+
+header {
+  padding: 0 10px;
+  padding-top: 50px;
 }
 
 header p{
-  color: white;
   font-size: 24px;
   padding: 0 100px;
   text-align: center;
 }
 
 .about, .works, .projects, .publications{
-  /*Your Code Here*/
   grid-column: 2 / auto;
 }
 
@@ -51,10 +45,49 @@ header p{
   overflow: hidden;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.noMobile {
+  display: none;
 }
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.resume {
+  border-radius: 10px;
+  background-color: rgb(201, 25, 25);
+  padding: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.resume a {
+  color: rgb(255, 255, 255);
+}
+
+.about-image img {
+  height: 400px;
+  /* width: auto; */
+  /* margin-left: auto; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about p {
+  margin-bottom: 5px;
+}
+
+.works li {
+  margin-top: 5px;
+}
+
+
 
 .about, .about-image{
   /*Your Code Here*/
@@ -82,10 +115,9 @@ img {
 }
 
 .text-block{
-background-color: rgba(255, 255, 255, .8);
+background-color: rgba(255, 255, 255, .9);
   border: 10px solid black;
   padding: 30px;
-  /*Your code here:*/
   align-self: center;
 }
 
@@ -96,39 +128,36 @@ background-color: rgba(255, 255, 255, .8);
     width: auto;
   }
   .container{
-    /*Your code here:*/
     grid-template-columns: 50px auto 500px auto 50px;
     grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about, .projects, .works-image, .publications-image{
-    /*Your code here:*/
     grid-column: 3 / 5;
   }
 
   .about-image, .projects-image, .works, .publications{
-    /*Your code here:*/
     grid-column: 2 / 4;
+  }
+  
+  .noMobile {
+    display: block;
   }
 }
 
-/*You do not need to modify any code below this line.
-It is included for accessibility to turn off animations
-and movement for people who have modified their 
-preferences to reduce motion.*/
-
+/* reduce motion */
 @media screen and (prefers-reduced-motion: reduce){
   html{
-      scroll-behavior: auto; /* Removes scroll animation */
+      scroll-behavior: auto;
   }
 
   .skip a{
-    -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
+    -webkit-transition: none;
+    transition: none;
    }
 
   /*Turn off parallax*/
-  header{
+  .parallax {
     background-attachment: initial;
   }
 }

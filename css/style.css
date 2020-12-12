@@ -57,6 +57,10 @@ h2{
   top:  -40px;
 }
 
+.skip a:focus, .skip a:hover{
+  top:  0px;
+}
+
 
 nav{
   background-color: #ddd;

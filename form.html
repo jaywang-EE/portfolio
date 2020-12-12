@@ -45,15 +45,18 @@
   </nav>
 
   <main>
-    <div class="title">
+    <!-- <div id="main" class="title">
       <h1>Your opinion matters!</h1>
       <p>Please leave your massage <br> if you have any advice or opportunity</p>
-    </div>
+    </div> -->
     
     <div class="container">
     <form method="POST" action="https://formspree.io/f/xbjpydqg">
       <fieldset>
-        <!-- <legend>Contact Me</legend> -->
+        <legend>
+          <h1>Your opinion matters!</h1>
+          <p>Please leave your massage <br> if you have any advice or opportunity</p>
+        </legend>
         <label for="name_id">Your Name</label><br>
         <input type="text" placeholder="Enter Your Name" name="name" id="name_id" required><br>
 
@@ -73,9 +76,9 @@
   </main>
 
     <footer>
-      <a class="icon" href="https://github.com/jaywang-EE"><i class="fab fa-github"></i></a>
-      <a class="icon" href="mailto:jaywang@umich.edu"><i class="fas fa-envelope"></i></a>
-      <a class="icon" href="https://www.linkedin.com/in/chia-ming-wang-um/"><i class="fab fa-linkedin"></i></a>
+      <a class="icon" href="https://github.com/jaywang-EE" aria-label="github"><i class="fab fa-github"></i></a>
+      <a class="icon" href="mailto:jaywang@umich.edu" aria-label="mail"><i class="fas fa-envelope"></i></a>
+      <a class="icon" href="https://www.linkedin.com/in/chia-ming-wang-um/" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
       <br>
       <p>&copy; Chia-Ming Wang</p>
     </footer>

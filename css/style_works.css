@@ -54,8 +54,9 @@ li {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
     transform: rotateY(180deg);
+    transition-duration: 1s;
 }
 
 .flip-card-front, .flip-card-back {
@@ -72,8 +73,8 @@ li {
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgb(22, 214, 221);
+    color: rgb(51, 51, 51);
     transform: rotateY(180deg);
 }
 
