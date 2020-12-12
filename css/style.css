@@ -148,6 +148,9 @@ nav a:hover, nav a:focus{
 nav li.curr {
   text-decoration: underline; 
   background-color: #555555;
+}
+
+.curr a {
   color: white;
 }
 
